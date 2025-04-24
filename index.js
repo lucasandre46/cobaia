@@ -1,8 +1,8 @@
 function soma(){
-    let valor1 = document.getElementById('valor1').value;
-     let valor2 = document.getElementById('valor2').value;
-    let soma = valor1 + valor2;
-    document.getElementById('resultado').innerHTML = soma
+  let valor1 = document.getElementById('valor1').value;
+  let valor2 = document.getElementById('valor2').value;
+  let resultado = Number(valor1) + Number(valor2);
+  document.getElementById('resultado').innerHTML = resultado;
   }
   
   function subtrair(){

@@ -19,6 +19,7 @@ body {
       height: 60vh;
       width: 40vw;
       border-radius: 5%;
+      box-shadow: 0 4vw 4vw rgba(0, 0, 0, 0.2);
     }
     
     input{
@@ -32,4 +33,5 @@ body {
         width: 50%;
         height: 10%;
         margin: 1%;
+        font-size: 1vw;
     }
