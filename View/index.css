@@ -1,0 +1,66 @@
+body{
+    overflow-x: hidden;
+    width: 100vw;
+    height: 800vh;
+    margin: 0;
+    padding: 0;
+}
+
+#Post {
+ width: 100vw;
+ height: 670vh;
+}
+
+section, img{
+    height: 10vh;
+    width: 100vw;
+}
+
+header{
+height: 5vh;
+width: 100vw;
+border: 0.2vw solid black;
+border-left: none;
+border-right: none;
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: end;
+}
+
+.btnHeader{
+    margin-right: 3vw;
+    height: 4vh;
+    width: 6vw;
+    border-radius: 25vw ;
+}
+
+main{
+    width: 100vw;
+    height: 85vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#div_txt{
+    height: 50vh;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#imgBeto{
+    height: 80vh;
+    width: 40vw;
+ 
+}
+
+h1{
+    margin-bottom: 3vw;
+}
+
+
