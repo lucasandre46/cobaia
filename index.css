@@ -1,37 +1,133 @@
-body {
-    overflow: hidden;
-      margin: 0%;
-      padding: 0%;
-      background-color: white;
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-      align-items: center;
-      
-    }
-    
-    div{
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      background-color: #d9fcff;
-      height: 60vh;
-      width: 40vw;
-      border-radius: 5%;
-      box-shadow: 0 4vw 4vw rgba(0, 0, 0, 0.2);
-    }
-    
-    input{
-      width: 50%;
-      height: 10%;
-      margin: 2%;
-      
-    }
 
-    .funcoes{
-        width: 50%;
-        height: 10%;
-        margin: 1%;
-        font-size: 1vw;
-    }
+@media(max-width: 400px){
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background: #f0f0f0;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 400px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+.search-bar {
+  width: 100%;
+  margin: 10px 0;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #aaa;
+  outline: none;
+}
+
+/* Área azul clara */
+.cards-area {
+  background: #c9d9ff;
+  border-radius: 15px;
+  padding: 15px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  width: 100%;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 30px;
+  height: 30px;
+  margin-bottom: 5px;
+}
+
+.card span {
+  font-size: 14px;
+  text-align: center;
+}
+
+/* Área vermelha maior */
+.selected-container {
+  background: #800033;
+  border-radius: 20px;
+  margin: 20px 0;
+  padding: 15px;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  width: 100%;
+  min-height: 140px; /* aumentada */
+}
+
+.selected-card {
+  background: white;
+  border-radius: 10px;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  position: relative;
+}
+
+.selected-card img {
+  width: 24px;
+  height: 24px;
+}
+
+.remove-btn {
+  background: red;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 12px;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  position: absolute;
+  top: -6px;
+  right: -6px;
+}
+
+.confirm-btn {
+  background: #9bb1ff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+}

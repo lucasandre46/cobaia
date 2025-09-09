@@ -1,27 +1,31 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="pt-BR">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>replit</title>
-  <link href="./index.css" rel="stylesheet" type="text/css" />
-  <script src="./index.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tela de Seleção</title>
+  <link rel="stylesheet" href="index.css">
+  <script src="index.js" defer></script>
 </head>
-
 <body>
+  <div class="container">
 
-       <h1>Calculadora</h1>
+    <!-- Barra de busca -->
+    <div class="search-bar">
+      <input type="text" id="searchInput" placeholder="Buscar...">
+    </div>
 
-  <div>
-    <input type="text" id="valor1">
-    <input type="text" id="valor2">
-    <h1 id="resultado">Resultado</h1>
-    <button id="soma" class="funcoes" onclick="soma()"> + </button>
-    <button class="funcoes" onclick="subtrair()"> - </button>
-    <button class="funcoes" onclick="multi()"> x </button>
-    <button class="funcoes" onclick="dividir()"> % </button>
+    <!-- Área azul para os cards -->
+    <div class="cards-area">
+      <div class="cards-container" id="cardsContainer"></div>
+    </div>
+
+    <!-- Área de seleção -->
+    <div class="selected-container" id="selectedContainer"></div>
+
+    <!-- Botão confirmar -->
+    <button class="confirm-btn">CONFIRMAR</button>
+
   </div>
 </body>
-
 </html>
